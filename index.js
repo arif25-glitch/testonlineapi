@@ -6,7 +6,6 @@ const server = http.createServer(app);
 const port = process.env.PORT || 3000;
 const admin = require('firebase-admin');
 const serviceAccount = require('./serviceAccount.json');
-const { database } = require('firebase-admin');
 
 app.use(express.static("frontend"));
 app.use(express.json({"limit" : "1mb"}));
